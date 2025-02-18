@@ -25,7 +25,7 @@ const Weather = () => {
     }
 
     useEffect(()=>{
-        search("London");
+        search("Mawlamyine");
     },[])
 
 
@@ -39,6 +39,7 @@ const Weather = () => {
         <img src={clear_icon} alt="" className='weather-icon' />
         <p className='temperature'>16*C</p>
         <p className='location'>London</p>
+        <p className='location_country'>UK</p>
         <div className='weather-data'>
             <div className='col'>
                 <img src={humidity_icon} alt="" />
