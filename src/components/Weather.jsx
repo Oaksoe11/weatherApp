@@ -42,6 +42,12 @@ const Weather = () => {
 
             const response = await fetch(url);
             const data = await response.json();
+
+            if(!response.ok){
+                alert(data.message);
+                return;
+            }
+
             console.log(data);
             const icon = allIcons[data.weather[0].icon] || clear_icon;
             setWeatherData({
@@ -55,7 +61,6 @@ const Weather = () => {
         }catch (error){
             setWeatherData(fasle);
             console.error("Error in fetching data");
-            alert("Error in fetching data");
         }
     }
 
