@@ -50,6 +50,11 @@
     font-size: 40px;
 }
 
+.location_country{
+    color: #fff;
+    font-size: 20px;
+}
+
 .weather-data{
     width: 100%;
     margin-top: 40px;
